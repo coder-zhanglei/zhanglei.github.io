@@ -161,3 +161,11 @@ git status 查看当前状态
 git tag 查看版本号 
 git diff 查看尚未提交的更新
 
+### git fetch：相当于是从远程获取最新版本到本地，不会自动merge
+
+Git log -p master..origin/master 比较本地的master分支和origin/master分支的差别 
+查看对比一下 ，具体效果这里就不贴了，各位可以自行测试
+git merge origin/master 进行合并
+
+需要注意的是: 和push不同, fetch会自动获取远程`新加入’的分支.
+
